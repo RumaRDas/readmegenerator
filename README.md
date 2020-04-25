@@ -1,20 +1,30 @@
 
-  # static-site [![NPM version](https://badge.fury.io/js/static-site.svg)](https://npmjs.org/package/static-site) [![Build Status](https://travis-ci.org/RumaRDas/static-site.svg?branch=master)](https://travis-ci.org/RumaRDas/static-site)
+ 
   # Project Name: 
-   Generate Readme File
+   Readme fIle
 
   ## Description 
-  WEATHER DASHBOARD is a website that can give current weather output according to users input city with current Date .The page ues feature by dynamically updated HTML and CSS powered 
+  
  (https://badgen.net/badge/color/blue/blue) 
 
  ## Table of Contents :
  * undefined
- ## IInstallation :
+ ## Installation :
  
+ *****
+
+ 
+
 ##  Usage
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
 ## License
-##Contributing
+
+
+## Contributing
 
 ## Tests
 
 ## Questions
+
+[![Build Status](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)
+# [My GiThub Link]()

@@ -8,6 +8,12 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
+      name: "username",
+      message: "Enter your GitHub Username"
+    },
+
+    {
+      type: "input",
       name: "title",
       message: "What is your Project Title?"
     },
@@ -16,29 +22,7 @@ function promptUser() {
       name: "description",
       message: "Please Describe your project"
     },
-    {
-      
-      type: "list",
-      name: "content",
-      choices: [
-          "Description\n",
-          "Table of content\n",
-          "Installation\n",   ],
-      message: "Choose Content of Table"
    
-  },
-  {
-    type: "checkbox",
-    message: "What languages do you know?",
-    name: "stack",
-    choices: [
-      "Description\n",
-      "Table of content\n",
-      "Installation\n",   
-    ]
-  },
-
-
     {
       type: "input",
       name: "installation",
@@ -46,68 +30,65 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
+      name: "contributing",
+      message: "Enter the name of Contributor"
     },
-    {   
-      type:"input",
-      name:"GithubURL",
-      message:"Enter your Github Project URL"      
-
-  },
-  {   
-    type:"input",
-    name:"contributing",
-    message:"Enter the name of Contributor"
-},
-{   
-  type: "input",
-  name: "license",
-  message:"Enter license details please"
-},
-{   
-  type:"input",
-  name:"test",
-  message:"Enter the name of Tests done"
-},
-{   
-  type:"input",
-  name:"question",
-  message:"Ask if you have any questions"
-}
+    {
+      type: "input",
+      name: "license",
+      message: "Enter license details please"
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "Enter the name of Tests done"
+    },
+    {
+      type: "input",
+      name: "question",
+      message: "Ask if you have any questions"
+    }
   ]);
 }
 function generatereadme(data) {
   return `
- 
-  # Project Name: 
 
+  # Project Name: 
   ## ${data.title}
    ____
+  ## Description 
+  ${data.description}
 
+ ## Table of Contents :
+ 1. [Title](https://github.com/${data.username}/readmegenerator)
+ 2. [Description](https://github.com/${data.username}/readmegenerator)
+ 3. [Installation](https://github.com/${data.username}/readmegenerator)
+ 4. [Usage](https://github.com/${data.username}/readmegenerator)
+ 5. [License](https://github.com/${data.username}/readmegenerator)
 
-## License\n
-         ${data.license}\n
+ ## Installation : 
+     ${data.installation}
+##  Usage
+                *  Here is a video sample of How to use This README file.
 
-## Contributing
+![](./assets/demo.gif)
+## License
+
+         ${data.license}
+
+## Contributor
+
 ${data.contributing}
 
 ## Tests
 
          ${data.test}
 
-## Questions [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://rumardas.github.io/my_portfolio/)
-${data.question}
+# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas)   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://${data.username}.github.io/my_portfolio/)
 
-
-https://badgen.net/badge/icon/github?icon=github&label
-
-# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas-colors)
-
-[My GiThub Link](https://github.com/RumaRDas/readmegenerator)
+[My GiThub Link](https://github.com/${data.username}/readmegenerator)
 `
 }
-
 
 async function init() {
   console.log("hi")
@@ -119,7 +100,7 @@ async function init() {
     await writeFileAsync("readme.md", text);
 
     console.log("Successfully wrote to index.html");
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   }
 }

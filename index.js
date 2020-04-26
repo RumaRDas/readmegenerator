@@ -84,7 +84,7 @@ function generatereadme(data) {
 
   ## ${data.title}
    ____
- 
+
 
 ## License\n
          ${data.license}\n

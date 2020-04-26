@@ -1,7 +1,7 @@
 
 
   # Project Name: 
-  ## Readme Generator
+  ## README GENERATOR
    ____
   ## Description 
   A Readme generator with `node.js` which will create a `README.md` file according to prompt answers of  users.
@@ -29,8 +29,8 @@ Ruma Das
 
 ## Tests
 
-         Nil
+          Nil
 
-# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://RumaRDas.github.io/my_portfolio/)
+# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas)   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://RumaRDas.github.io/my_portfolio/)
 
 [My GiThub Link](https://github.com/RumaRDas/readmegenerator)

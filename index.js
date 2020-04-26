@@ -43,11 +43,7 @@ function promptUser() {
       name: "test",
       message: "Enter the name of Tests done"
     },
-    {
-      type: "input",
-      name: "question",
-      message: "Ask if you have any questions"
-    }
+
   ]);
 }
 function generatereadme(data) {
@@ -84,7 +80,7 @@ ${data.contributing}
 
          ${data.test}
 
-# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas)   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://${data.username}.github.io/my_portfolio/)
+# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/${data.username})   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://${data.username}.github.io/my_portfolio/)
 
 [My GiThub Link](https://github.com/${data.username}/readmegenerator)
 `

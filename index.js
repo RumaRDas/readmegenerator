@@ -14,66 +14,97 @@ function promptUser() {
     {
       type: "input",
       name: "description",
-      message: "Describe your project"
+      message: "Please Describe your project"
     },
+    {
+      
+      type: "list",
+      name: "content",
+      choices: [
+          "Description\n",
+          "Table of content\n",
+          "Installation\n",   ],
+      message: "Choose Content of Table"
+   
+  },
+  {
+    type: "checkbox",
+    message: "What languages do you know?",
+    name: "stack",
+    choices: [
+      "Description\n",
+      "Table of content\n",
+      "Installation\n",   
+    ]
+  },
+
+
     {
       type: "input",
       name: "installation",
-      message: "What is your installatuon code?"
-    },
-    {
-      type: "input",
-      name: "license",
-      message: "What is your License ?"
+      message: "How to Install it?"
     },
     {
       type: "input",
       name: "github",
       message: "Enter your GitHub Username"
     },
-    {
-      type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
-    },
-    // {
-    //   type: "input",
-    //   name: "linkedin",
-    //   message: "Enter your LinkedIn URL."
-    // }
+    {   
+      type:"input",
+      name:"GithubURL",
+      message:"Enter your Github Project URL"      
+
+  },
+  {   
+    type:"input",
+    name:"contributing",
+    message:"Enter the name of Contributor"
+},
+{   
+  type: "input",
+  name: "license",
+  message:"Enter license details please"
+},
+{   
+  type:"input",
+  name:"test",
+  message:"Enter the name of Tests done"
+},
+{   
+  type:"input",
+  name:"question",
+  message:"Ask if you have any questions"
+}
   ]);
 }
 function generatereadme(data) {
   return `
  
   # Project Name: 
-   ${data.title}
 
-  ## Description 
-  ${data.description}
- (https://badgen.net/badge/color/blue/blue) 
-
- ## Table of Contents :
- * ${data.Usea}
- ## Installation :
+  ## ${data.title}
+   ____
  
- *****
 
- ${data.installation}
-
-##  Usage
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
-## License
-${data.license}
+## License\n
+         ${data.license}\n
 
 ## Contributing
+${data.contributing}
 
 ## Tests
 
-## Questions
+         ${data.test}
 
-[![Build Status](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)
-# [My GiThub Link]()
+## Questions [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://rumardas.github.io/my_portfolio/)
+${data.question}
+
+
+https://badgen.net/badge/icon/github?icon=github&label
+
+# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas-colors)
+
+[My GiThub Link](https://github.com/RumaRDas/readmegenerator)
 `
 }
 

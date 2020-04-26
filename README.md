@@ -1,30 +1,52 @@
 
  
   # Project Name: 
-   Readme fIle
 
+  ## 
+   ____
   ## Description 
   
  (https://badgen.net/badge/color/blue/blue) 
 
  ## Table of Contents :
- * undefined
- ## Installation :
- 
- *****
+ * Description
 
- 
+
+ * 
+Description
+,Table of content
+,Installation
+
+
+ ## Installation : 
+
+     
+
 
 ##  Usage
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
+                *  Here is a video sample of How to use This README file.
+
+![](./assets/demo.gif)
+
 ## License
+
+         
 
 
 ## Contributing
 
+
 ## Tests
 
-## Questions
+         
 
-[![Build Status](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)](https://drive.google.com/file/d/1wGJP0dJNcQeQkvpz5pCF0GspWTYClW-b/view)
-# [My GiThub Link]()
+## Questions [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://rumardas.github.io/my_portfolio/)
+
+
+
+https://badgen.net/badge/icon/github?icon=github&label
+
+# [![github](https://img.shields.io/badge/mygithub-link-profile.svg)](https://github.com/RumaRDas-colors)
+
+[My GiThub Link](https://github.com/RumaRDas/readmegenerator)

@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -65,12 +65,12 @@ async function init() {
         email: res.data.email,
         avatar_url: res.data.avatar_url
       }
-
+console.log(completeData);
       const text = generateMarkdown(completeData);
 
       writeFileAsync("README.md", text);
 
-      console.log("Successfully wrote to index.html");
+      console.log("Successfully wrote to README.md");
     })
   } catch (err) {
     console.log(err);

@@ -48,24 +48,34 @@ function promptUser() {
 
   ]);
 }
+
 function getGitHub(username) {
   const queryUrl = `https://api.github.com/users/${username}?client_id=b77dd6d5ba39bf8bca34&client_secret=8a78678b6f246d35c590f5f6088859266fc6b0d2`;
 
   return axios.get(queryUrl);
 }
+
 async function init() {
-  console.log("hi")
   try {
     const data = await promptUser();
+    getGitHub(data.username).then(function (res) {
+      console.log(res.data);
+      const completeData = {
+        ...data,
+        email: res.data.email,
+        avatar_url: res.data.avatar_url
+      }
 
-    const text = generatereadme(data);
+      const text = generateMarkdown(completeData);
 
-    await writeFileAsync("README.md", text);
+      writeFileAsync("README.md", text);
 
-    console.log("Successfully wrote to index.html");
+      console.log("Successfully wrote to index.html");
+    })
   } catch (err) {
     console.log(err);
   }
 }
 
 init();
+

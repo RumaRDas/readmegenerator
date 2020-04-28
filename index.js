@@ -48,7 +48,11 @@ function promptUser() {
 
   ]);
 }
+function getGitHub(username) {
+  const queryUrl = `https://api.github.com/users/${username}?client_id=b77dd6d5ba39bf8bca34&client_secret=8a78678b6f246d35c590f5f6088859266fc6b0d2`;
 
+  return axios.get(queryUrl);
+}
 async function init() {
   console.log("hi")
   try {
